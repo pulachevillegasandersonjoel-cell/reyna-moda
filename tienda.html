@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Reyna Moda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button class="btn-volver" onclick="history.back()">← Volver</button>
+<header class="header">
+    <h1>REYNA MODA - Tienda</h1>
+     <input type="search" class="buscador" placeholder="Buscar productos...">
+    <a href="carrito.html">Ver carrito 🛒</a>
+</header>
+
+<section class="seccion">
+    <h2>Ropa Urbana</h2>
+
+    <div class="productos">
+        <div class="card" data-nombre="sudadera hoodie sweatshirt" data-precio="75.30">
+            <img src="img/sudadera.jpg" alt="Sudadera Hoodie Sweatshirt">
+            <h3>Sudadera Hoodie Sweatshirt</h3>
+            <p>S/75.30</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Sudadera Hoodie Sweatshirt',75.30)">Agregar</button>
+        </div>
+
+        <div class="card" data-nombre="Cargo militar" data-precio="110">
+            <img src="img/cargo1.jpg" alt="Cargo Militar">
+            <h3>Pantalón Cargo Militar</h3>
+            <p>S/110</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Pantalón Cargo Militar',110)">Agregar</button>
+        </div>
+
+        <div class="card" data-nombre="camiseta new york" data-precio="35.20">
+            <img src="img/camiseta.jpg" alt="camiseta new york">
+            <h3>Camiseta New York</h3>
+            <p>S/35.20</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Camiseta New York',35.20)">Agregar</button>
+        </div>
+         <div class="card" data-nombre="Pantalon Coolane" data-precio="79.90">
+            <img src="img/coolane.jpg" alt="Pantalon Coolane">
+            <h3>Pantalon Coolane</h3>
+            <p>S/79.90</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Pantalon Coolane',79.90)">Agregar</button>
+        </div>
+         <div class="card" data-nombre="Polo con estanpando" data-precio="17.99">
+            <img src="img/polo2.jpg" alt="Polo con estanpando">
+            <h3>Polo con estanpando</h3>
+            <p>S/17.99</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Polo con estanpando',17.99)">Agregar</button>
+        </div>
+    </div><br>
+
+    <div class="productos">
+        <div class="card" data-nombre="Camiseta Y2K" data-precio="23.50">
+            <img src="img/polo.jpg" alt="Camiseta Y2K">
+            <h3>Camiseta Y2K</h3>
+            <p>S/23.50</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Camiseta Y2K',23.50)">Agregar</button>
+        </div>
+
+        <div class="card" data-nombre="Sueter con estanpando" data-precio="77">
+            <img src="img/sueter.jpg" alt="Sueter con estanpando">
+            <h3>Sueter con estanpando</h3>
+            <p>S/77</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Sueter con estanpando',77)">Agregar</button>
+        </div>
+
+        <div class="card" data-nombre="Bralette premiun" data-precio="45">
+            <img src="img/bralette.jpg" alt="Bralette premiun">
+            <h3>Bralette premiun</h3>
+            <p>S/45</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Bralette premiun',45)">Agregar</button>
+        </div>
+         <div class="card" data-nombre="Pantalon baggie" data-precio="120">
+            <img src="img/baggie.jpg" alt="Pantalon baggie">
+            <h3>Pantalon baggie</h3>
+            <p>S/120</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Pantalon baggie',120)">Agregar</button>
+        </div>
+         <div class="card" data-nombre="Chaqueta cropped" data-precio="150">
+            <img src="img/chaqueta2.jpg" alt="Chaqueta cropped">
+            <h3>Chaqueta cropped</h3>
+            <p>S/150</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Chaqueta cropped',150)">Agregar</button>
+        </div>
+    </div>
+    
+</section>
+
+<section class="seccion">
+    <h2>Ropa Interior</h2>
+
+    <div class="productos">
+        <div class="card" data-nombre="Ttrendy Bikini Style Of 2025" data-precio="25">
+            <img src="img/bikini.jpg" alt="Ttrendy Bikini Style Of 2025">
+            <h3>Ttrendy Bikini Style Of 2025</h3>
+            <p>S/25</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Ttrendy Bikini Style Of 2025',25)">Agregar</button>
+        </div>
+
+        <div class="card" data-nombre="Pack de Sujetador" data-precio="38.99">
+            <img src="img/sujetador.jpg" alt="Sujetador">
+            <h3>Pack de Sujetador   </h3>
+            <p>S/38.99</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Pack de Sujetador',38.99)">Agregar</button>
+        </div>
+
+        <div class="card" data-nombre="Pack de Brazier" data-precio="18.90">
+            <img src="img/braziers.jpg" alt="Pack de Brazier">
+            <h3>Pack de Brazier</h3>
+            <p>S/18.90</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Pack de Brazier',18.90)">Agregar</button>
+        </div>
+         <div class="card" data-nombre="Pack de 6 boxer" data-precio="22.50">
+            <img src="img/boxer.jpg" alt="Pack de 6 boxer">
+            <h3>Pack de 6 boxer</h3>
+            <p>S/22.50</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Pack de 6 boxer',22.50)">Agregar</button>
+        </div>
+         <div class="card" data-nombre="Conjunto de lenceria" data-precio="33.20">
+            <img src="img/conjunto.jpg" alt="Conjunto de lenceria">
+            <h3>Conjunto de lenceria</h3>
+            <p>S/33.20</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Conjunto de lenceria',33.20)">Agregar</button>
+        </div>
+    </div><br>
+
+    <div class="productos">
+        <div class="card" data-nombre="Bikini color solido con cordones" data-precio="31.35">
+            <img src="img/bikini2.jpg" alt="Bikini color solido con cordones">
+            <h3>Bikini color solido con cordones</h3>
+            <p>S/31.35</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Bikini color solido con cordones',31.35)">Agregar</button>
+        </div>
+
+        <div class="card" data-nombre="7 piezas Tanga con encaje floral" data-precio="27.80">
+            <img src="img/encaje.jpg" alt="7 piezas Tanga con encaje floral">
+            <h3>7 piezas Tanga con encaje floral</h3>
+            <p>S/27.80</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('7 piezas Tanga con encaje floral',27.80)">Agregar</button>
+        </div>
+
+        <div class="card" data-nombre="3 pares Calcetines con estampado de corazón" data-precio="13.20">
+            <img src="img/medias.jpg" alt="3 pares Calcetines con estampado de corazón">
+            <h3>3 pares Calcetines con estampado de corazón</h3>
+            <p>S/13.20</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('3 pares Calcetines con estampado de corazón',13.20)">Agregar</button>
+        </div>
+         <div class="card" data-nombre="Pack de 4 sujetador mas short" data-precio="42">
+            <img src="img/deporte.jpg" alt="Pack de 4 sujetador mas short">
+            <h3>Pack de 4 sujetador mas short</h3>
+            <p>S/42</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Pack de 4 sujetador mas short',42)">Agregar</button>
+        </div>
+         <div class="card" data-nombre="Body semi transparente" data-precio="36">
+            <img src="img/body.jpg" alt="Body semi transparente">
+            <h3>Body semi transparente</h3>
+            <p>S/36</p>
+             <div class="cantidad">
+        <button onclick="cambiarCantidad(this, -1)">−</button>
+        <input type="number" value="1" min="1">
+        <button onclick="cambiarCantidad(this, 1)">+</button>
+    </div>
+            <button onclick="agregarCarrito('Body semi transparente',36)">Agregar</button>
+        </div>
+    </div>
+    
+</section>
+
+<script src="js/carrito.js"></script>
+<script src="js/buscador.js"></script>
+<script src="js/carrito.js"></script>
+</body>
+</html>

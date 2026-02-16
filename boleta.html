@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleta - Reyna Moda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button class="btn-volver" onclick="location.href='index.html'">← Volver al inicio</button>
+
+<div class="boleta">
+    <h1>REYNA MODA</h1>
+    <p><strong>Boleta de Compra</strong></p>
+    <p id="fecha"></p>
+
+    <hr>
+
+    <h3>Datos del Cliente</h3>
+    <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+    <p><strong>Correo:</strong> <span id="correo"></span></p>
+    <p><strong>Método de pago:</strong> <span id="pago"></span></p>
+
+    <hr>
+
+    <h3>Detalle de Productos</h3>
+    <ul id="detalleProductos"></ul>
+
+    <h2>Total: S/ <span id="total"></span></h2>
+<button class="btn imprimir" onclick="window.print()">🖨️ Imprimir boleta</button>
+
+    <p class="gracias">Gracias por comprar en REYNA MODA 💎</p>
+</div>
+
+<script src="js/boleta.js"></script>
+</body>
+</html>

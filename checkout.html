@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Reyna Moda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button class="btn-volver" onclick="history.back()">← Volver</button>
+<h1>Método de Pago</h1>
+
+<form class="pago" onsubmit="generarBoleta(event)">
+    <label>Nombre completo</label>
+    <input type="text" id="nombre" required>
+
+    <label>Correo</label>
+    <input type="email" id="correo" required>
+
+    <label>Método de pago</label>
+    <select id="metodo">
+        <option>Tarjeta de crédito</option>
+        <option>Transferencia bancaria</option>
+        <option>Yape / Plin</option>
+    </select>
+
+    <button type="submit">Confirmar pago</button>
+</form>
+
+<script>
+function generarBoleta(e) {
+    e.preventDefault();
+
+    const datos = {
+        nombre: document.getElementById("nombre").value,
+        correo: document.getElementById("correo").value,
+        metodo: document.getElementById("metodo").value
+    };
+
+    localStorage.setItem("datosCompra", JSON.stringify(datos));
+    window.location.href = "boleta.html";
+}
+</script>
